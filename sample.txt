@@ -1,0 +1,48 @@
+Use these credentials to access the project via API:
+sample-learning-app
+
+
+project_key
+sample-learning-app
+
+
+client_id
+L-BxhIGehsCVj5DGx_A3tc4C
+
+
+secret
+x2yFir4viCge0DCqk9tLcG2xCooukZ5H
+
+
+scope
+manage_project:sample-learning-app
+
+
+API URL
+https://api.eu-central-1.aws.commercetools.com
+
+
+Auth URL
+https://auth.eu-central-1.aws.commercetools.com
+
+
+You can download the credentials in various formats below. Doing so may assist you in using the credentials in cURL, an SDK or in other environments.
+
+Select usage examples from dropdown
+cURL
+
+
+
+curl https://auth.eu-central-1.aws.commercetools.com/oauth/token \
+     --basic --user "L-BxhIGehsCVj5DGx_A3tc4C:x2yFir4viCge0DCqk9tLcG2xCooukZ5H" \
+     -X POST \
+     -d "grant_type=client_credentials&scope=manage_project:sample-learning-app"
+
+
+
+
+
+
+
+     APPLICATION ID
+     cm2olklfi0001x71az26a8qd3
