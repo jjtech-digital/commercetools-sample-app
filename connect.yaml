@@ -7,28 +7,28 @@ deployAs:
       preUndeploy: npm install && npm run connector:pre-undeploy
     configuration:
       standardConfiguration:
-        - key: "the-new-sample-project"
-          description: "Project key of the commercetools Composable Commerce Project"
+        - key: the-new-sample-project
+          description:  Project key of the commercetools Composable Commerce Project 
           required: true
-          default: "the-new-sample-project"
-        - key: "gcp-eu"
-          description: "Region where the commercetools Composable Commerce Project is hosted"
+          default: the-new-sample-project
+        - key: gcp-eu
+          description:  Region where the commercetools Composable Commerce Project is hosted 
           required: true
-          default: "gcp-eu"
-        - key: "starter-fdf083"
-          description: "The Application entry point URI path"
+          default: gcp-eu 
+        - key: starter-fdf083 
+          description: The Application entry point URI path 
           required: true
-          default: "starter-fdf083"
+          default: starter-fdf083 
       securedConfiguration:
-        - key: "XCjQZkcrUWE4vl8Qd32ukKop"
-          description: "client_id of an API Client for the commercetools Composable Commerce Project"
+        - key: XCjQZkcrUWE4vl8Qd32ukKop 
+          description: client_id of an API Client for the commercetools Composable Commerce Project 
           required: true
-          default: "XCjQZkcrUWE4vl8Qd32ukKop"
-        - key: "Ytw8zuIJcNDceMzIKkQTIWXqZdemqrfU"
-          description: "secret of an API Client for the commercetools Composable Commerce Project"
+          default: XCjQZkcrUWE4vl8Qd32ukKop 
+        - key:  Ytw8zuIJcNDceMzIKkQTIWXqZdemqrfU 
+          description: secret of an API Client for the commercetools Composable Commerce Project 
           required: true
-          default: "Ytw8zuIJcNDceMzIKkQTIWXqZdemqrfU"
-        - key: "manage_project:the-new-sample-project"
-          description: "scope of an API Client for the commercetools Composable Commerce Project"
+          default: Ytw8zuIJcNDceMzIKkQTIWXqZdemqrfU 
+        - key: manage_project:the-new-sample-project 
+          description: scope of an API Client for the commercetools Composable Commerce Project 
           required: true
-          default: "manage_project:the-new-sample-project"
+          default: manage_project:the-new-sample-project 
