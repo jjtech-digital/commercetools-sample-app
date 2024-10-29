@@ -1,5 +1,5 @@
 deployAs:
-  - name: my-new-custom-application-project
+  - name: the-new-sample-project
     applicationType: merchant-center-custom-application
     endpoint: /service
     scripts:
