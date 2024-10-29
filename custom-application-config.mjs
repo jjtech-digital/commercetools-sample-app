@@ -4,15 +4,15 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
  * @type {import('@commercetools-frontend/application-config').ConfigOptionsForCustomApplication}
  */
 const config = {
-  name: 'Starter Fdf083',
+  name: 'sample-commercetool-learning-app',
   entryPointUriPath,
-  cloudIdentifier: 'aws-eu',
+  cloudIdentifier: 'gcp-eu',
   env: {
     development: {
-      initialProjectKey: 'sample-learning-app',
+      initialProjectKey: 'the-new-sample-project',
     },
     production: {
-      applicationId: 'cm2olklfi0001x71az26a8qd3',
+      applicationId: 'cm2ufiqk8000yi5i54kueac1v',
       url: 'https://your_app_hostname.com',
     },
   },
