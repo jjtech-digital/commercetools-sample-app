@@ -1,6 +1,8 @@
 deployAs:
-  - name: my-new-custom-application-project
-    applicationType: merchant-center-custom-application
+  - name: enabler
+    applicationType: assets
+  - name: processor
+    applicationType: service
     endpoint: /
     scripts:
       postDeploy: npm install && npm run connector:post-deploy
@@ -21,13 +23,19 @@ deployAs:
           description: commercetools API URL
           required: true
           default: https://api.europe-west1.gcp.commercetools.com
+        - key: CTP_SESSION_URL
+          description: Session API URL
+          required: true
+          default: https://session.europe-west1.gcp.commercetools.com
+        - key: CTP_JWKS_URL
+          description: JWKs url (example - https://mc-api.europe-west1.gcp.commercetools.com/.well-known/jwks.json)
+          required: true
+          default: https://mc-api.europe-west1.gcp.commercetools.com/.well-known/jwks.json
+        - key: CTP_JWT_ISSUER
+          description: JWT Issuer for jwt validation (example - https://mc-api.europe-west1.gcp.commercetools.com)
+          required: true
+          default: https://mc-api.europe-west1.gcp.commercetools.com
       securedConfiguration:
-        - key: CTP_CLIENT_ID
-          description: client_id of an API Client for the commercetools Composable Commerce Project
-          required: true
         - key: CTP_CLIENT_SECRET
-          description: secret of an API Client for the commercetools Composable Commerce Project
-          required: true
-        - key: CTP_SCOPE
-          description: scope of an API Client for the commercetools Composable Commerce Project
+          description: commercetools client secret
           required: true
