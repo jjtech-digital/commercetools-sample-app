@@ -5,15 +5,15 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
  */
 const config = {
   name: 'sample-commercetool-learning-app',
-  entryPointUriPath,
-  cloudIdentifier: 'gcp-eu',
+  entryPointUriPath: '${env:ENTRY_POINT_URI_PATH}',
+  cloudIdentifier: '${env:CLOUD_IDENTIFIER}',
   env: {
     development: {
       initialProjectKey: 'the-new-sample-project',
     },
     production: {
       applicationId: '${env:CUSTOM_APPLICATION_ID}',
-      url: 'https://your_app_hostname.com',
+      url: '${env:APPLICATION_URL}',
     },
   },
   oAuthScopes: {
