@@ -12,7 +12,7 @@ const config = {
       initialProjectKey: 'the-new-sample-project',
     },
     production: {
-      applicationId: 'cm2ufiqk8000yi5i54kueac1v',
+      applicationId: '${env:CUSTOM_APPLICATION_ID}',
       url: 'https://your_app_hostname.com',
     },
   },
