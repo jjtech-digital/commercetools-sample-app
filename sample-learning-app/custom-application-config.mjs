@@ -5,7 +5,7 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
  */
 const config = {
   name: 'Sample CommerceTool Learning App',
-  entryPointUriPath: '${env:ENTRY_POINT_URI_PATH}',
+  entryPointUriPath,
   cloudIdentifier: '${env:CLOUD_IDENTIFIER}',
   env: {
     development: {
@@ -22,7 +22,7 @@ const config = {
   },
   icon: '${path:@commercetools-frontend/assets/application-icons/rocket.svg}',
   mainMenuLink: {
-    defaultLabel: 'Template starter',
+    defaultLabel: 'Sample CommerceTool Learning App',
     labelAllLocales: [],
     permissions: [PERMISSIONS.View],
   },
