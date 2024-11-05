@@ -1,7 +1,0 @@
-node_modules
-public
-dist
-!.env
-.env
-.env.local
-package-lock.json
