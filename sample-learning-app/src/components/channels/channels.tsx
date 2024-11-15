@@ -64,7 +64,7 @@ const Channels = (props: TChannelsProps) => {
       </ContentNotification>
     );
   }
-   console.log("testing!")
+  console.log("add testing!")
   return (
     <Spacings.Stack scale="xl">
       <Spacings.Stack scale="xs">
