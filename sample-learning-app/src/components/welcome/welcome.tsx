@@ -82,7 +82,7 @@ const Welcome = () => {
             />
           </div>
         </div>
-
+        <h2>This is a custom app built for testing!</h2>
         <Spacings.Stack scale="l">
           <Text.Subheadline as="h4" intlMessage={messages.subtitle} />
           <Grid
